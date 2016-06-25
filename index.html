@@ -13,13 +13,17 @@
 <body>
     <script>
         var app = Elm.Main.fullscreen();
-        app.ports.encrypt.subscribe(function(master, input) {
+        app.ports.encrypt.subscribe(function(arr) {
+            var master = arr[0];
+            var input = arr[1];
             var obj = X.encrypt(master, input);
             console.log('ports:encrypt', master, input, obj);
             app.ports.encrypted.send(obj);
         });
 
-        app.ports.decrypt.subscribe(function(master, obj) {
+        app.ports.decrypt.subscribe(function(arr) {
+            var master = arr[0];
+            var obj = arr[1];
             var text = X.decrypt(master, obj);
             console.log('ports:decrypt', master, obj, text);
             app.ports.decrypted.send(text);
