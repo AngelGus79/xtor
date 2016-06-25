@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="xtor">
+<head>
+    <meta charset="UTF-8">
+    <title>xtor - Password Manager in JS</title>
+
+    <link rel="stylesheet" href="bower_components/bulma/css/bulma.min.css">
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+
+    <script src="X.js"></script>
+    <script src="elm.js"></script>
+</head>
+<body>
+    <script>
+        var app = Elm.Main.fullscreen();
+        app.ports.encrypt.subscribe(function(master, input) {
+            var obj = X.encrypt(master, input);
+            console.log('ports:encrypt', master, input, obj);
+            app.ports.encrypted.send(obj);
+        });
+
+        app.ports.decrypt.subscribe(function(master, obj) {
+            var text = X.decrypt(master, obj);
+            console.log('ports:decrypt', master, obj, text);
+            app.ports.decrypted.send(text);
+        });
+    </script>
+</body>
+</html>

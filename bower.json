@@ -1,0 +1,8 @@
+{
+  "name": "xtor",
+  "description": "password manager in pure js",
+  "dependencies": {
+    "bulma": "^0.0.28",
+    "font-awesome": "fontawesome#^4.6.3"
+  }
+}
