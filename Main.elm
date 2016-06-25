@@ -43,4 +43,31 @@ subs model =
         ]
 
 view : Model -> Html Msg
-view model = text ""
+view model =
+    section [class "hero is-success is-fullheight"]
+        [ div [class "hero-body", id "is-top"]
+            [ div [class "container"]
+                [ h1 [class "title"]
+                    [text "xtor - Password Manager"]
+                , h2 [class "subtitle"]
+                    [text "Encrypt / Decrypt in pure client-side JavaScript"]
+
+                , div [class "tile is-ancestor"]
+                    [ div [class "tile is-vertical"]
+                        [ div [class "title is-success"]
+                            [ div [class "tile is-vertical is-parent"]
+                                [ div [class "tile is-child box notification is-primary"]
+                                    [ p [class "title"] [text "Encryptor"]
+                                    , p [class "subtitle"] [text "Hello! welcome back"]
+                                    ]
+
+                                , div [class "tile is-child box notification is-info"]
+                                    [ p [class "title"] [text "Decryptor"]
+                                    ]
+                                ]
+                            ]
+                        ]
+                    ]
+                ]
+            ]
+        ]

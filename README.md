@@ -20,7 +20,7 @@ $ browserify cry.js -o X.js
 # compile elm packages
 $ npm i -g elm
 $ elm-package install
-$ elm-make Main.elm -o elm.js
+$ elm-make Main.elm --output elm.js
 ```
 
 ### Setup server
