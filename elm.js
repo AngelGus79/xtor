@@ -8816,10 +8816,28 @@ var _rajasharan$xtor$Main$view = function (model) {
 																A2(
 																_elm_lang$html$Html$a,
 																_elm_lang$core$Native_List.fromArray(
-																	[]),
+																	[
+																		_elm_lang$html$Html_Attributes$href('https://github.com/rajasharan/xtor')
+																	]),
 																_elm_lang$core$Native_List.fromArray(
 																	[
-																		_elm_lang$html$Html$text(' Github')
+																		A2(
+																		_elm_lang$html$Html$span,
+																		_elm_lang$core$Native_List.fromArray(
+																			[
+																				_elm_lang$html$Html_Attributes$class('icon')
+																			]),
+																		_elm_lang$core$Native_List.fromArray(
+																			[
+																				A2(
+																				_elm_lang$html$Html$i,
+																				_elm_lang$core$Native_List.fromArray(
+																					[
+																						_elm_lang$html$Html_Attributes$class('fa fa-github')
+																					]),
+																				_elm_lang$core$Native_List.fromArray(
+																					[]))
+																			]))
 																	]))
 															]))
 													]))

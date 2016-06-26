@@ -76,7 +76,11 @@ view model =
                             [ li [] [text "Uses AES-256-CBC with sha256 HMAC"]
                             , li [] [text "Salt generation using PBKDF2 with 32 byte key length"]
                             , li [] [text "Data always stays in the browser (never sent anywhere)"]
-                            , li [] [text "Open Source MIT License", a [] [text " Github"]]
+                            , li [] [text "Open Source MIT License"
+                                    ,a [href "https://github.com/rajasharan/xtor"]
+                                        [ span [class "icon"]
+                                            [i [class "fa fa-github"] []] ]
+                                    ]
                             ]
                         ]
                     ]

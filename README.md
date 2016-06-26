@@ -1,5 +1,16 @@
 # xtor - Password Manager in JS
-## Dev setup
+Encrypt / Decrypt in pure client-side JavaScript
+- Uses AES-256-CBC with sha256 HMAC
+- Salt generation using PBKDF2 with 32 byte key length
+- Data always stays in the browser (never sent anywhere)
+- Open Source MIT License
+
+## [Live link](https://rajasharan.github.io/xtor)
+
+## Screencase demo
+![](/demo.gif)
+
+## Local server setup
 ### Upgrage node
 ```sh
 # upgrade node version >= 6.2.2
@@ -23,7 +34,7 @@ $ elm-package install
 $ elm-make Main.elm --output elm.js
 ```
 
-### Setup server
+### Start server
 ```sh
 # any static server will work
 $ npm i -g lite-server
