@@ -34,6 +34,13 @@ $ elm-package install
 $ elm-make Main.elm --output elm.js
 ```
 
+### Setup bower
+```sh
+# pull in bower dependencies
+$ npm i -g bower
+$ bower install
+```
+
 ### Start server
 ```sh
 # any static server will work
