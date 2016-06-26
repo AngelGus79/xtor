@@ -7,7 +7,7 @@ Encrypt / Decrypt in pure client-side JavaScript
 
 ## [Live link](https://rajasharan.github.io/xtor)
 
-## Screencase demo
+## Screencast demo
 ![](/demo.gif)
 
 ## Local server setup
