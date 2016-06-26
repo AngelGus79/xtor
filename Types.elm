@@ -7,7 +7,7 @@ type alias Model =
     , encrypt_output : String
     , decrypt_input: String
     , decrypt_output: String
-    , enc_obj : Enc
+    , enc : Enc
     }
 
 type alias Enc =
@@ -18,9 +18,11 @@ type alias Enc =
 
 type alias Hex = String
 
-type Msg = Master1 String
-         | Master2 String
-         | Encrypt
-         | Decrypt
-         | Encrypted Enc
-         | Decrypted String
+type Msg = Master1 String   -- master pass1 input handler
+         | Master2 String   -- master pass2 input handler
+         | Encrypt String   -- encrypt text input handler
+         | Encryptor        -- encrypt button handler
+         | Decrypt String   -- decrypt text input handler
+         | Decryptor        -- decrypt button handler
+         | Encrypted Enc    -- encrypted result object
+         | Decrypted String -- decrypted result text
