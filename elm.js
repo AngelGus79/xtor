@@ -8497,6 +8497,23 @@ var _rajasharan$xtor$Main$encryptorFormBox = function (model) {
 							]),
 						_elm_lang$core$Native_List.fromArray(
 							[
+								A2(
+								_elm_lang$html$Html$span,
+								_elm_lang$core$Native_List.fromArray(
+									[
+										_elm_lang$html$Html_Attributes$class('icon')
+									]),
+								_elm_lang$core$Native_List.fromArray(
+									[
+										A2(
+										_elm_lang$html$Html$i,
+										_elm_lang$core$Native_List.fromArray(
+											[
+												_elm_lang$html$Html_Attributes$class('fa fa-lock')
+											]),
+										_elm_lang$core$Native_List.fromArray(
+											[]))
+									])),
 								_elm_lang$html$Html$text('Encrypt')
 							]))
 					])),
@@ -8595,6 +8612,23 @@ var _rajasharan$xtor$Main$decryptorFormBox = function (model) {
 							]),
 						_elm_lang$core$Native_List.fromArray(
 							[
+								A2(
+								_elm_lang$html$Html$span,
+								_elm_lang$core$Native_List.fromArray(
+									[
+										_elm_lang$html$Html_Attributes$class('icon')
+									]),
+								_elm_lang$core$Native_List.fromArray(
+									[
+										A2(
+										_elm_lang$html$Html$i,
+										_elm_lang$core$Native_List.fromArray(
+											[
+												_elm_lang$html$Html_Attributes$class('fa fa-unlock')
+											]),
+										_elm_lang$core$Native_List.fromArray(
+											[]))
+									])),
 								_elm_lang$html$Html$text('Decrypt')
 							]))
 					])),
